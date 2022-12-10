@@ -23,7 +23,7 @@ fun TeamListItem(
     ) {
         Text(
             text = teamMembers.name,
-            style = androidx.compose.material.MaterialTheme.typography.h5
+            style = androidx.compose.material.MaterialTheme.typography.h6
         )
         Spacer(modifier = Modifier.height(4.dp))
         Text(

@@ -55,14 +55,13 @@ fun CoinDetailScreen(
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(12.dp),
-                        horizontalArrangement = Arrangement.SpaceEvenly
+                            .padding(4.dp),
+                        horizontalArrangement = Arrangement.SpaceBetween
                     ) {
                         Text(
-                            text = "${coin.rank}. ${coin.name}\n(${coin.symbol})",
+                            text = "${coin.rank}. ${coin.name} (${coin.symbol})",
                             style = androidx.compose.material.MaterialTheme.typography.h4,
-                            modifier = Modifier.weight(2f),
-                            textAlign = TextAlign.Center
+                            modifier = Modifier.weight(2f).padding(4.dp)
                         )
                         Text(
                             text = if (coin.is_active) "active" else "inactive",
@@ -74,7 +73,7 @@ fun CoinDetailScreen(
                                 .weight(2f)
                         )
                     }
-                    Divider(thickness = 6.dp, color = Color.DarkGray)
+                    Divider(thickness = 6.dp, color = Color.White)
                     Spacer(modifier = Modifier.height(15.dp))
                     Text(
                         text = coin.description,
@@ -84,7 +83,7 @@ fun CoinDetailScreen(
                     Spacer(modifier = Modifier.height(15.dp))
                     Text(
                         text = "Tags",
-                        style = androidx.compose.material.MaterialTheme.typography.h4,
+                        style = androidx.compose.material.MaterialTheme.typography.h5,
                         textAlign = TextAlign.Center,
                         modifier = Modifier.fillMaxWidth()
 
@@ -103,7 +102,7 @@ fun CoinDetailScreen(
                     Spacer(modifier = Modifier.height(15.dp))
                     Text(
                         text = "Team Members",
-                        style = androidx.compose.material.MaterialTheme.typography.h4,
+                        style = androidx.compose.material.MaterialTheme.typography.h5,
                         textAlign = TextAlign.Center,
                         modifier = Modifier.fillMaxWidth()
                     )
