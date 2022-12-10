@@ -34,7 +34,8 @@ fun CoinListItem(
         Text(
             text = "${coin.rank}. ${coin.name} ${(coin.symbol)}",
             style = androidx.compose.material.MaterialTheme.typography.body1,
-            overflow = TextOverflow.Ellipsis
+            overflow = TextOverflow.Ellipsis,
+            color = Color.Black
         )
 
         Text(

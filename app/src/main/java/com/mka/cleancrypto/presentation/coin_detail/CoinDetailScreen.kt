@@ -61,7 +61,8 @@ fun CoinDetailScreen(
                         Text(
                             text = "${coin.rank}. ${coin.name} (${coin.symbol})",
                             style = androidx.compose.material.MaterialTheme.typography.h4,
-                            modifier = Modifier.weight(2f).padding(4.dp)
+                            modifier = Modifier.weight(2f).padding(4.dp),
+                            color = Color.Black
                         )
                         Text(
                             text = if (coin.is_active) "active" else "inactive",
@@ -78,14 +79,16 @@ fun CoinDetailScreen(
                     Text(
                         text = coin.description,
                         style = androidx.compose.material.MaterialTheme.typography.body2,
-                        modifier = Modifier.padding(12.dp)
+                        modifier = Modifier.padding(12.dp),
+                        color = Color.DarkGray
                     )
                     Spacer(modifier = Modifier.height(15.dp))
                     Text(
                         text = "Tags",
                         style = androidx.compose.material.MaterialTheme.typography.h5,
                         textAlign = TextAlign.Center,
-                        modifier = Modifier.fillMaxWidth()
+                        modifier = Modifier.fillMaxWidth(),
+                        color = Color.Black
 
                     )
                     Spacer(modifier = Modifier.height(15.dp))
@@ -104,7 +107,8 @@ fun CoinDetailScreen(
                         text = "Team Members",
                         style = androidx.compose.material.MaterialTheme.typography.h5,
                         textAlign = TextAlign.Center,
-                        modifier = Modifier.fillMaxWidth()
+                        modifier = Modifier.fillMaxWidth(),
+                        color = Color.Black
                     )
                     Spacer(modifier = Modifier.height(15.dp))
 
